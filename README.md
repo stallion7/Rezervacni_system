@@ -13,3 +13,6 @@
 - python
 
 připojování přes oauth2 google, microsoft, aws, other
+
+# Postup práce
+
