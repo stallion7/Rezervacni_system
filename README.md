@@ -23,6 +23,7 @@ docker:
 
 django: 
 1. https://github.com/django-cms/django-cms-quickstart
+2.django admin login : https://coderwall.com/p/mvsoyg/django-dumpdata-and-loaddata
 
 # Proč jsem si vybral tento projekt
 Chtěl jsem se naučit nové technologie a práce s djangem.\
