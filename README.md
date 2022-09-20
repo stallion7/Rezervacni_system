@@ -22,7 +22,7 @@ docker:
 3.https://docs.docker.com/desktop/install/ubuntu/
 
 django: 
-1. https://github.com/django-cms/django-cms-quickstart
+1. https://github.com/django-cms/django-cms-quickstart \
 2.django admin login : https://coderwall.com/p/mvsoyg/django-dumpdata-and-loaddata
 
 # Proč jsem si vybral tento projekt
