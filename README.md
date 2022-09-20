@@ -25,7 +25,7 @@ django:
 1. https://github.com/django-cms/django-cms-quickstart
 
 # Proč jsem si vybral tento projekt
-Chtěl jsem se naučit nové technologie a práce s djangem.\ 
+Chtěl jsem se naučit nové technologie a práce s djangem.\
 Taky jsem chtěl udělát webovou stránku s rezervačním systém pro kruháč působící v mé obci.
 
 
