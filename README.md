@@ -23,6 +23,8 @@ docker:
 
 django: 
 1. https://github.com/django-cms/django-cms-quickstart \
+podařilo se mi najít chybu v příkazu tohoto autora
+opravená chyba: 1. git clone https://github.com/django-cms/django-cms-quickstart
 2.django admin login : https://coderwall.com/p/mvsoyg/django-dumpdata-and-loaddata
 
 # Proč jsem si vybral tento projekt
