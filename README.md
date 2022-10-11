@@ -7,6 +7,7 @@
  Představuji si webovou stránku na kterou se uživatel přihlásí a následně si vytvoří rezervaci na trénink.
  
  Autor projektu: Štěpán Krautwurst\
+ 
  Konzultanti: Marek Lučný, Petr Grussman
  
 # Služby
