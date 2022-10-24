@@ -6,6 +6,10 @@
  Jako ročníkový projekt jsem se rozhodl udělat rezervační systém.\
  Představuji si webovou stránku na kterou se uživatel přihlásí a následně si vytvoří rezervaci na trénink.
  
+ Autor projektu: Štěpán Krautwurst 
+ 
+ Konzultanti: Marek Lučný, Petr Grussman
+ 
 # Služby
 - django
 - html, css, bootstrap
@@ -26,6 +30,10 @@ django:
 podařilo se mi najít chybu v příkazu tohoto autora
 opravená chyba: 1. git clone https://github.com/django-cms/django-cms-quickstart
 2.django admin login : https://coderwall.com/p/mvsoyg/django-dumpdata-and-loaddata
+2.1 django authentication system : https://docs.djangoproject.com/en/4.1/topics/auth/default \
+3.django vytvoreni modulu : 3.1 https://docs.djangoproject.com/en/4.1/intro/tutorial01/
+3.2 admin site : https://docs.djangoproject.com/en/4.1/ref/contrib/admin/
+3.3 https://docs.djangoproject.com/en/4.1/intro/reusable-apps/
 
 # Proč jsem si vybral tento projekt
 Chtěl jsem se naučit nové technologie a práce s djangem.\
