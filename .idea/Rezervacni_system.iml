@@ -4,8 +4,9 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/databaze/venv" />
       <excludeFolder url="file://$MODULE_DIR$/mysite/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.9 (Rezervacni_system)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.8 (Rezervacni_system-main)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
