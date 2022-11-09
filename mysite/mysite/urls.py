@@ -6,5 +6,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('slipka_gym/', include('slipka_gym.urls')),
     path('', RedirectView.as_view(url='slipka_gym')),
+    path('accounts/', include('accounts.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
 
 ]
