@@ -28,13 +28,13 @@
         <form method="post" action="{% url 'login' %}">
             {% csrf_token %}
             <div class="row form-group">
-                <label for="id_username" class="offset-md-3 col-md-2">{{ form.username.label }}</label>
+                <label  class="offset-md-3 col-md-2">{{ form.username.label }}</label>
                 <div class="col-md-4">
                     {% render_field form.username class="form-control" %}
                 </div>
             </div>
             <div class="row form-group">
-                <label for="id_password" class="offset-md-3 col-md-2">{{ form.password.label }}</label>
+                <label class="offset-md-3 col-md-2">{{ form.password.label }}</label>
                 <div class="col-md-4">
                     {% render_field form.password class="form-control" %}
                 </div>
