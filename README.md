@@ -29,8 +29,8 @@ django:
 1. https://github.com/django-cms/django-cms-quickstart \
 podařilo se mi najít chybu v příkazu tohoto autora
 opravená chyba: 1. git clone https://github.com/django-cms/django-cms-quickstart
-2.django admin login : https://coderwall.com/p/mvsoyg/django-dumpdata-and-loaddata
-2.1 django authentication system : https://docs.djangoproject.com/en/4.1/topics/auth/default \
+2.django admin login : https://coderwall.com/p/mvsoyg/django-dumpdata-and-loaddata \
+2.1 django authentication system : https://www.hacksoft.io/blog/google-oauth2-with-django-react-part-1
 3.django vytvoreni modulu : 3.1 https://docs.djangoproject.com/en/4.1/intro/tutorial01/
 3.2 admin site : https://docs.djangoproject.com/en/4.1/ref/contrib/admin/
 3.3 https://docs.djangoproject.com/en/4.1/intro/reusable-apps/
