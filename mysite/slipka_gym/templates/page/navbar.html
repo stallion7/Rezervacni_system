@@ -1,13 +1,15 @@
-<!DOCTYPE html>
-<html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <title>navbar</title>
-</head>
-<body>
-<header>
-    <nav> class= "navbar"
-        <img src="" alt=""></nav>
-</header>
-</body>
-</html>
+ <nav class="navbar">
+   {%load static%}
+      <img src="{%static 'img/logo4.png'%}" id="logo" alt="avatar logo"></a>
+      <div href="#" class="nadpis">Slipka Gym</div>
+      <a href="#" class="toggle-button">
+        <span id="bar1" class="bar"></span>
+        <span id="bar2" class="bar"></span>
+        <span id="bar3" class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="#">Úvod</a></li>
+        </ul>
+      </div>
+    </nav>
