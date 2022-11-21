@@ -1,0 +1,21 @@
+.navbar {
+    padding: 0.7rem;
+    background-color: rgba(0, 0, 0, 0.863) !important;
+}
+.avatar {
+    position: relative;
+    width: 40px;
+}
+.navbar-brand{
+    position:absolute;
+    top: 31.5px;
+    transform: translateY(-60px);
+    transform: translateX(45px);
+    font-size: 23px;
+}
+.navbar-nav li {
+padding-right: 45px;
+}
+.nav-link {
+    font-size: 1.1em !important;
+}

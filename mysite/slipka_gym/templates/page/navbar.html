@@ -1,15 +1,31 @@
- <nav class="navbar">
+<nav class="navbar navbar-expand-xl navbar-dark sticky-top">
    {%load static%}
-      <img src="{%static 'img/logo4.png'%}" id="logo" alt="avatar logo"></a>
-      <div href="#" class="nadpis">Slipka Gym</div>
-      <a href="#" class="toggle-button">
-        <span id="bar1" class="bar"></span>
-        <span id="bar2" class="bar"></span>
-        <span id="bar3" class="bar"></span>
-      </a>
-      <div class="navbar-links">
-        <ul>
-          <li><a href="#">Úvod</a></li>
-        </ul>
-      </div>
+      <img src="{%static 'img/logo4.png'%}" class="avatar" class="d-inline-block align-top" alt="avatar logo"></a>
+      <div href="#" class="navbar-brand" class="nadpis">Slipka Gym</div>
+      <a href="#" class="toggle-button"></a>
+           <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'index'%}">Úvod<span class="sr-only"></span></a>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'login'%}">Přihlášení</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'signup'%}">Registrace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rezervace</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Kontakt</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="https://www.facebook.com/groups/352601271743452/">Facebook</a>
+                    </li>
+            </ul>
+        </div>
     </nav>

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'slipka_gym',
     'accounts',
     'widget_tweaks',
+
 ]
 
 MIDDLEWARE = [
