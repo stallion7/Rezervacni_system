@@ -1,0 +1,70 @@
+#kruhovy{
+    color: #ffcc00;
+}
+#zavody{
+    color: #ffcc00;
+}
+#pomucky{
+    color: #ffcc00;
+}
+#party{
+    color: #ffcc00;
+}
+ #myBtn{
+     background-color: rgba(0, 0, 0, 0.8);
+     color: white;
+     border: rgba(0, 0, 0, 0.8);
+ }
+ .darkmode--activated #myBtn{
+    background-color: rgb(255, 255, 255);
+    color: black;
+ }
+  #myBtn2{
+     background-color: rgba(0, 0, 0, 0.8);
+     color: white;
+     border: rgba(0, 0, 0, 0.8);
+ }
+  .darkmode--activated #myBtn2{
+    background-color: rgb(255, 255, 255);
+    color: black;
+ }
+   #myBtn3{
+     background-color: rgba(0, 0, 0, 0.8);
+     color: white;
+     border: rgba(0, 0, 0, 0.8);
+ }
+   .darkmode--activated #myBtn3{
+    background-color: rgb(255, 255, 255);
+    color: black;
+ }
+    #myBtn4{
+     background-color: rgba(0, 0, 0, 0.8);
+     color: white;
+     border: rgba(0, 0, 0, 0.8);
+ }
+    .darkmode--activated #myBtn4{
+    background-color: rgb(255, 255, 255);
+    color: black;
+ }
+    #kruhovy_img{
+        width: 100%;
+    }
+    #pomucky_img{
+        width: 100%;
+    }
+    #party_img{
+        width: 100%;
+    }
+    zavody_img{
+        width: 100%;
+    }
+.darkmode--activated p {
+    color: rgb(223, 219, 219);
+}
+.darkmode--activated #footer{
+    background-color:rgb(255, 255, 255)  !important;
+    color: black;
+}
+.darkmode--activated li {
+    color: rgb(223, 219, 219);
+}

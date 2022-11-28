@@ -28,20 +28,20 @@
         <form method="post" action="{% url 'login' %}">
             {% csrf_token %}
             <div class="row form-group">
-                <label  class="offset-md-3 col-md-2">{{ form.username.label }}</label>
+                <label id="user"  class="offset-md-3 col-md-2">{{ form.username.label }}</label>
                 <div class="col-md-4">
                     {% render_field form.username class="form-control" %}
                 </div>
             </div>
             <div class="row form-group">
-                <label class="offset-md-3 col-md-2">{{ form.password.label }}</label>
+                <label id="password" class="offset-md-3 col-md-2">{{ form.password.label }}</label>
                 <div class="col-md-4">
                     {% render_field form.password class="form-control" %}
                 </div>
             </div>
             <div class="row form-group">
                 <div class="offset-md-5 col-md-4">
-                    <button class="btn btn-primary">Přihlásit se</button>
+                    <button id="Ac_Btn" class="btn btn-primary">Přihlásit se</button>
                     <input type="hidden" name="next" value="{{ next }}"/>
                 </div>
             </div>

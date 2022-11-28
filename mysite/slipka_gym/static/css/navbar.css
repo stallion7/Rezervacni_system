@@ -1,4 +1,4 @@
-.navbar {
+#navbar {
     padding: 0.7rem;
     background-color: rgba(0, 0, 0, 0.863) !important;
 }
@@ -18,4 +18,7 @@ padding-right: 45px;
 }
 .nav-link {
     font-size: 1.1em !important;
+}
+.darkmode--activated #navbar {
+    background-color: rgb(223, 219, 219) !important;
 }
