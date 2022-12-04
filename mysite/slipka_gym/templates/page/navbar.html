@@ -1,7 +1,7 @@
 <nav id="navbar" class="navbar navbar-expand-xl navbar-dark sticky-top">
    {%load static%}
       <img src="{%static 'img/logo4.png'%}" class="avatar" class="d-inline-block align-top" alt="avatar logo"></a>
-      <div href="#" class="navbar-brand" class="nadpis">Slipka Gym</div>
+      <div id="nadpis" href="#" class="navbar-brand" class="nadpis">Slipka Gym</div>
       <a href="#" class="toggle-button"></a>
            <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
             aria-controls="collapsibleNavId" aria-label="Toggle navigation">
@@ -10,21 +10,21 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'index'%}">Úvod<span class="sr-only"></span></a>
+                    <a id="a1" class="nav-link" href="{% url 'index'%}">Úvod<span class="sr-only"></span></a>
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'login'%}">Přihlášení</a>
+                      <a id="a2" class="nav-link" href="{% url 'login'%}">Přihlášení</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="{% url 'signup'%}">Registrace</a>
+                      <a id="a3" class="nav-link" href="{% url 'signup'%}">Registrace</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Rezervace</a>
+                        <a id="a4" class="nav-link" href="#">Rezervace</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Kontakt</a>
+                        <a id="a5" class="nav-link" href="#">Kontakt</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="https://www.facebook.com/groups/352601271743452/">Facebook</a>
+                          <a id="a6" class="nav-link" href="https://www.facebook.com/groups/352601271743452/">Facebook</a>
                     </li>
             </ul>
         </div>

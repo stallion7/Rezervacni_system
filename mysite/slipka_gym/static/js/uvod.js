@@ -14,3 +14,10 @@ const options = {
 
 const darkmode = new Darkmode(options);
 darkmode.showWidget();
+
+let pomucky_img = document.getElementById('pomucky_img');
+let images = ['img/expander.jpg','img/blaze_pods'];
+setInterval(function(){
+  let random = Math.floor(Math.random() *5);
+  pomucky_img.src = images[random];
+}, 9000);

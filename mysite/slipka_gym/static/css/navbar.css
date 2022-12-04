@@ -20,5 +20,27 @@ padding-right: 45px;
     font-size: 1.1em !important;
 }
 .darkmode--activated #navbar {
-    background-color: rgb(223, 219, 219) !important;
+    background-color: white !important;
 }
+.darkmode--activated #a1 {
+    background-color: black !important;
+}
+.darkmode--activated #a2 {
+    background-color: black !important;
+}
+.darkmode--activated #a3 {
+    background-color: black !important;
+}
+.darkmode--activated #a4 {
+    background-color: black !important;
+}
+.darkmode--activated #a5 {
+    background-color: black !important;
+}
+.darkmode--activated #a6 {
+    background-color: black !important;
+}
+.darkmode--activated #nadpis {
+    background-color: black !important;
+}
+
