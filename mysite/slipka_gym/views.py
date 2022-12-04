@@ -4,3 +4,6 @@ from django.shortcuts import render
 
 def index(request):
     return render(request, "uvod.html")
+
+def rezervace(request):
+    return render(request, "rez.html")
