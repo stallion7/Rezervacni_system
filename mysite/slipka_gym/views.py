@@ -6,4 +6,7 @@ def index(request):
     return render(request, "uvod.html")
 
 def rezervace(request):
-    return render(request, "rez.html")
+    return render(request, "rezervace.html")
+
+def uvod(request):
+    return render(request, "uvod_prihlaseny.html")

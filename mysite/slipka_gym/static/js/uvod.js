@@ -16,7 +16,7 @@ const darkmode = new Darkmode(options);
 darkmode.showWidget();
 
 let pomucky_img = document.getElementById('pomucky_img');
-let images = ['img/expander.jpg','img/blaze_pods'];
+let images = ['img/expander.jpg','img/blaze_pods.jpg'];
 setInterval(function(){
   let random = Math.floor(Math.random() *5);
   pomucky_img.src = images[random];
