@@ -11,36 +11,36 @@
     color: #ffcc00;
 }
  #myBtn{
-     background-color: rgba(0, 0, 0, 0.8);
+     background-color: rgba(0, 0, 0.8);
      color: white;
-     border: rgba(0, 0, 0, 0.8);
+     border: rgba(0, 0, 0.8);
  }
  .darkmode--activated #myBtn{
     background-color: rgb(255, 255, 255);
     color: black;
  }
   #myBtn2{
-     background-color: rgba(0, 0, 0, 0.8);
+     background-color: rgba(0, 0, 0.8);
      color: white;
-     border: rgba(0, 0, 0, 0.8);
+     border: rgba(0, 0, 0.8);
  }
   .darkmode--activated #myBtn2{
     background-color: rgb(255, 255, 255);
     color: black;
  }
    #myBtn3{
-     background-color: rgba(0, 0, 0, 0.8);
+     background-color: rgba(0, 0, 0.8);
      color: white;
-     border: rgba(0, 0, 0, 0.8);
+     border: rgba(0, 0, 0.8);
  }
    .darkmode--activated #myBtn3{
     background-color: rgb(255, 255, 255);
     color: black;
  }
     #myBtn4{
-     background-color: rgba(0, 0, 0, 0.8);
+     background-color: rgba(0, 0, 0.8);
      color: white;
-     border: rgba(0, 0, 0, 0.8);
+     border: rgba(0, 0, 0.8);
  }
     .darkmode--activated #myBtn4{
     background-color: rgb(255, 255, 255);

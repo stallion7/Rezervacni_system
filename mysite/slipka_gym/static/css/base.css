@@ -2,3 +2,29 @@ body{
     background-color: white !important;
     min-height: 200vh;
 }
+ ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #fff;
+    margin: 5px 5px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background:  rgb(20, 20, 20);
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background:  rgb(112, 112, 112);
+  }
+  .darkmode--activated::-webkit-scrollbar-track{
+    background: #000;
+  }
+  .darkmode--activated::-webkit-scrollbar {
+    background-color: #000;
+  }
+  .darkmode--activated::-webkit-scrollbar-thumb:hover{
+    background:  rgb(148, 147, 147);
+  }
+  .darkmode--activated::-webkit-scrollbar-thumb{
+    background:  rgb(223, 219, 219);
+  }

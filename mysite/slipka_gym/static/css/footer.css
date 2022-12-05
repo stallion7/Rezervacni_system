@@ -2,3 +2,8 @@
     background-color: rgba(0,0,0.8) !important;
     color: white;
 }
+ .toggle-button {
+        display: flex;
+        color: #cb1515;
+        z-index: 1;
+    }
