@@ -18,3 +18,17 @@
 .darkmode--activated #password{
       color: rgb(223, 219, 219);
  }
+.darkmode--activated #prihlaseni{
+    color: white;
+}
+.darkmode--activated #registrace{
+    color: white;
+}
+#slipka{
+    position: absolute;
+  top: 150px;
+  bottom: 150px;
+  transform: translateX(225%);
+  object-fit: scale-down;
+  z-index: -1;
+}

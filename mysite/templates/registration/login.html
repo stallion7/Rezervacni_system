@@ -4,8 +4,8 @@
 
 {% block content %}
 <div class="row mb-3">
-    <div class="col-sm-12 bg-warning">
-        <h2 class="display-4 text-center">Přihlášení uživatele</h2>
+    <div class="col-md-5 mx-auto my-4 mx-4">
+        <h2 id="prihlaseni" class="display-4 text-center">Přihlášení uživatele</h2>
     </div>
 </div>
 <div class="row mb-3">
@@ -51,4 +51,6 @@
         <p class="text-center"><a href="{% url 'password_reset' %}">Chcete obnovit své heslo?</a></p>
     </div>
 </div>
+  {%load static%}
+<img id="slipka" src="{% static 'img/slepice1.png' %}" alt="">
 {% endblock %}

@@ -76,33 +76,32 @@ function myFunction4() {
   }
 }
 
-/*
+
 let pomucky_img = document.getElementById('pomucky_img');
-let images = ['img/expander.jpg','img/blaze_pods.jpg', 'img/svihadla.jpg'];
+let images = ['/static/img/expander.jpg','/static/img/blaze_pods.jpg', '/static/img/svihadla.jpg'];
 setInterval(function(){
-  let random = Math.floor(Math.random() *5);
+  let random = Math.floor(Math.random() *3);
   pomucky_img.src = images[random];
-}, 9000);
+}, 8000);
 
 let kruhovy_img = document.getElementById('kruhovy_img');
-let images2 = ['img/uvod2.jpg','img/uvod3.jpg','img/trenink2.jpg'];
+let images2 = ['/static/img/uvod2.jpg','/static/img/uvod3.jpg','/static/img/trenink2.jpg'];
 setInterval(function(){
-  let random = Math.floor(Math.random() *5);
+  let random = Math.floor(Math.random() *3);
   kruhovy_img.src = images2[random];
-}, 12000);
+}, 10000);
 
 let zavody_img = document.getElementById('zavody_img');
-let images3 = ['img/zavod1.jpg','img/zavod2.jpg','img/zavod3.jpg','img/zavod4.jpg','img/zavod5.jpg'];
+let images3 = ['/static/img/zavod1.jpg','/static/img/zavod2.jpg','/static/img/zavod3.jpg','/static/img/zavod4.jpg','/static/img/zavod5.jpg'];
 setInterval(function(){
   let random = Math.floor(Math.random() *5);
  zavody_img.src = images3[random];
 }, 9000);
 
 let party_img = document.getElementById('party_img');
-let images4 = ['img/uvod.jpg','img/party2.jpg'];
+let images4 = ['/static/img/uvod.jpg','/static/img/party2.jpg'];
 setInterval(function(){
-  let random = Math.floor(Math.random() *5);
+  let random = Math.floor(Math.random() *2);
   party_img.src = images4[random];
-}, 9000);
+}, 12000);
 
- */
