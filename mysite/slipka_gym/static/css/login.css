@@ -26,9 +26,23 @@
 }
 #slipka{
     position: absolute;
-  top: 150px;
+  top: 120px;
   bottom: 150px;
-  transform: translateX(225%);
+  transform: translateX(270%);
   object-fit: scale-down;
   z-index: -1;
+    width: 480px;
+}
+
+#slipka2{
+    position: absolute;
+  top: 120px;
+  bottom: 150px;
+  transform: translateX(290%);
+  object-fit: scale-down;
+  z-index: -1;
+    width: 480px;
+}
+#username{
+    top: 1px;
 }

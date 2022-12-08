@@ -18,6 +18,14 @@
                       <li class="nav-item">
                           <a id="a6" class="nav-link" href="https://www.facebook.com/groups/352601271743452/">Facebook</a>
                     </li>
+                {% if user.is_authenticated %}
+                <li>
+                    <p id="username" class="text-white my-2">Uživatel: {{ user.get_username}}</p>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="{% url 'logout'%}?next={{ request.path}}">Odhlásit se</a>
+                </li>
+                {% endif %}
             </ul>
         </div>
     </nav>
