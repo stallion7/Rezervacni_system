@@ -2,4 +2,8 @@
 
 {% block content %}
 <h1 class="text-center my-3 display-4">Rezervace</h1>
+ {{current_year}}, {{current_month}}, {{current_day}} </br>
+<div class="col-md-1 mx-auto">
+{{ cal|safe }}
+ </div>
 {% endblock content %}
