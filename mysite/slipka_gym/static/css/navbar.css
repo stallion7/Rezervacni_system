@@ -49,7 +49,7 @@ padding-right: 45px;
 .darkmode--activated #icon {
     color: black !important;
 }
-#icon {
-    color: red;
+.darkmode--activated #btn_n{
+    background-color: black;
 }
 
