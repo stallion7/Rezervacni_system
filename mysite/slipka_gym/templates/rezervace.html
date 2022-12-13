@@ -2,13 +2,9 @@
 
 {% block content %}
 <h1 class="text-center my-3 display-4">Rezervace</h1>
-<div id="cal" class="container col-lg-2 mx-auto py-2">
- <div class="container col-md-10">
+<div id="cal" class="container col-sm-12 px-3 mx-auto">
  Čas: <b>  {{time}} </b></br>
 <p>Datum: <b>{{current_day}}. {{current_month}}. {{current_year}}</b></p></br>
-  </div>
-<div class="container col-md-10">
 {{ cal|safe }}
- </div>
  </div>
 {% endblock content %}

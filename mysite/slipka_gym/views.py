@@ -6,6 +6,9 @@ from django.shortcuts import render
 import calendar
 from calendar import HTMLCalendar
 from datetime import datetime
+from django.http import HttpResponseRedirect
+
+from .forms import TreninkForm
 
 def index(request):
     return render(request, "uvod.html")
@@ -38,3 +41,18 @@ def rezervace(request, year=datetime.now().year, month=datetime.now().strftime('
 @login_required
 def uvod(request):
     return render(request, "uvod_prihlaseny.html")
+
+@login_required
+def add_trenink(request):
+    submitted = False
+    if request.method == "POST":
+        form = TreninkForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect('../rezervace?submitted=True')
+    else:
+        form = TreninkForm
+        if 'submitted' in request.GET:
+            submitted = True
+
+    return  render(request, "trenink.html", {'form': form, 'submitted': submitted})
