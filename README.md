@@ -43,4 +43,7 @@ opravená chyba: 1. git clone https://github.com/django-cms/django-cms-quickstar
 Chtěl jsem se naučit nové technologie a práce s djangem.\
 Taky jsem chtěl udělát webovou stránku s rezervačním systém pro kruháč působící v mé obci.
 
+# To do
+možnost propojení s facebookem 
+
 
