@@ -25,7 +25,13 @@ class Trenink(models.Model):
 
     cas = models.TimeField(verbose_name="cas_konani_treninku")
 
-    misto = models.CharField(verbose_name="misto_konani_treninku", max_length=20)
+    MISTA = (
+        ("venku", "Venku"),
+        ("mala_telocvicna", "Malá tělovična"),
+        ("velka_telecvicna", "Velká tělocvična")
+    )
+
+    misto = models.CharField(choices=MISTA, verbose_name="misto_konani_treninku", max_length=20)
 
     class Meta:
         ordering = ['datum', 'cas']

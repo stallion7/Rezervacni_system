@@ -7,6 +7,7 @@ import calendar
 from calendar import HTMLCalendar
 from datetime import datetime
 from django.http import HttpResponseRedirect
+from .models import Trenink
 
 from .forms import TreninkForm
 
@@ -56,3 +57,6 @@ def add_trenink(request):
             submitted = True
 
     return  render(request, "trenink.html", {'form': form, 'submitted': submitted})
+
+def trenink(request):
+    return render()
