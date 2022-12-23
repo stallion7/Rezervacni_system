@@ -16,6 +16,7 @@ def index(request):
 
 @login_required
 def rezervace(request, year=datetime.now().year, month=datetime.now().strftime('%B')):
+    trenink_list = Trenink.objects.all()
     month = month.title()
     month_number = list(calendar.month_name).index(month)
     month_number = int(month_number)
@@ -37,6 +38,7 @@ def rezervace(request, year=datetime.now().year, month=datetime.now().strftime('
                    "month_number": month_number,
                    "cal": cal,
                    "time": time,
+                   'trenink_list': trenink_list
                    })
 
 @login_required
@@ -57,6 +59,3 @@ def add_trenink(request):
             submitted = True
 
     return  render(request, "trenink.html", {'form': form, 'submitted': submitted})
-
-def trenink(request):
-    return render()

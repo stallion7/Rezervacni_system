@@ -7,4 +7,25 @@
 <p>Datum: <b>{{current_day}}. {{current_month}}. {{current_year}}</b></p></br>
 {{ cal|safe }}
  </div>
+<div class="container col-md-2 mx-auto">
+
+ {% for trenink in trenink_list %}
+
+    <div class="card">
+  <div class="card-header">
+    <b>{{trenink}}</b>
+  </div>
+  <div class="card-body">
+    <h4 class="card-title">{{trenink.popis}}</h4>
+    <ul>
+  <li> <b>Datum:</b> {{trenink.datum}}</li>
+  <li> <b>Čas:</b> {{trenink.cas}}</li>
+  <li> <b>Místo:</b> {{trenink.misto}}</li>
+
+ </ul>
+  </div>
+</div>
+ {% endfor %}
+
+</div>
 {% endblock content %}

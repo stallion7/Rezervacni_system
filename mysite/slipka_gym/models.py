@@ -38,4 +38,4 @@ class Trenink(models.Model):
         verbose_name_plural = "Trénink"
 
     def __str__(self):
-        return f"{self.datum} {self.cas}"
+        return f"{self.popis}: {self.datum}"
