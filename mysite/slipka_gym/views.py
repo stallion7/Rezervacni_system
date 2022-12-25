@@ -2,13 +2,12 @@ from typing import List
 
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 import calendar
 from calendar import HTMLCalendar
 from datetime import datetime
 from django.http import HttpResponseRedirect
 from .models import Trenink
-
 from .forms import TreninkForm
 
 def index(request):
@@ -59,3 +58,30 @@ def add_trenink(request):
             submitted = True
 
     return  render(request, "trenink.html", {'form': form, 'submitted': submitted})
+
+@login_required
+def update_trenink(request, trenink_id):
+    trenink = Trenink.objects.get(pk=trenink_id)
+    form = TreninkForm(request.POST or None, instance=trenink)
+    if form.is_valid():
+        form.save()
+        return redirect('rezervace')
+    return render(request, "update_trenink.html", {'trenink': trenink, 'form': form})
+
+@login_required
+def delete_trenink(request, trenink_id):
+    trenink = Trenink.objects.get(pk=trenink_id)
+    trenink.delete()
+    return redirect('rezervace')
+
+def show_trenink(request, trenink_id):
+    trenink = Trenink.objects.get(pk=trenink_id)
+    return render(request, "show_trenink.html",
+                  {'trenink': trenink})
+
+def seznam_treninku(request):
+    seznam_treninku = Trenink.objects.all()
+    return render(request, "trenink_list.html",
+                  {'seznam_treninku': seznam_treninku})
+
+

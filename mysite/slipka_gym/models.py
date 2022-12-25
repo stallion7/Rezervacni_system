@@ -28,7 +28,7 @@ class Trenink(models.Model):
     MISTA = (
         ("venku", "Venku"),
         ("mala_telocvicna", "Malá tělovična"),
-        ("velka_telecvicna", "Velká tělocvična")
+        ("velka_telocvicna", "Velká tělocvična")
     )
 
     misto = models.CharField(choices=MISTA, verbose_name="misto_konani_treninku", max_length=20)

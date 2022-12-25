@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="text-center my-3 display-4">  {{trenink}}</h1>
+</br>
+<div class="col-md-6 mx-auto">
+    <div class="card">
+  <div class="card-header">
+    <b>{{trenink}}</b>
+  </div>
+  <div class="card-body">
+    <h4 class="card-title">{{trenink.popis}}</h4>
+    <ul>
+  <li> <b>Datum:</b> {{trenink.datum}}</li>
+  <li> <b>Čas:</b> {{trenink.cas}}</li>
+  <li> <b>Místo:</b> {{trenink.misto}}</li>
+
+ </ul>
+      </div>
+        </div>
+    </div>
+ {%load static%}
+ <img id="slipka2" src="{% static 'img/slepice1.png' %}" alt="">
+{% endblock content %}

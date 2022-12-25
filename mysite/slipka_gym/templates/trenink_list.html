@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="text-center my-3 display-4">Seznam tréninků</h1>
+<div class="col-md-6 mx-auto">
+<table class="table  table-hover table-light table-striped table-bordered">
+ </br>
+{% for trenink in seznam_treninku %}
+ <tr>
+ <td>
+<a id="trenink_a"> {{ trenink}}</a>
+  </td>
+     <td>
+         <div class="ml-2">
+              <a class="btn-sm" id="btn_dt" href="{% url 'show-trenink' trenink.id %}">Detail</a>
+             <a class="btn-sm" id="btn_tr" href="{% url 'update-trenink' trenink.id %}">Update</a>
+            <a class="btn-sm" id="btn_dl" href="{% url 'delete-trenink' trenink.id %}">Delete</a>
+         </div>
+     </td>
+  </tr>
+{% endfor %}
+ </table>
+ </div>
+
+ {%load static%}
+<img id="slipka2" src="{% static 'img/slepice1.png' %}" alt="">
+{% endblock content %}

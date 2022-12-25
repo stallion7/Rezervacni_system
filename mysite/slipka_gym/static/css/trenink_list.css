@@ -1,0 +1,18 @@
+#btn_tr{
+  background-color: rgba(0, 0, 0, 0.8);
+     color: white;
+     border: rgba(0, 0, 0, 0.8);
+}
+#trenink_a{
+    color: black;
+}
+#btn_dl{
+  background-color: rgba(255, 0, 0, 0.8);
+     color: white;
+     border: rgba(0, 0, 0, 0.8);
+}
+#btn_dt{
+  background-color: rgb(1, 141, 180);
+     color: white;
+     border: rgba(0, 0, 0, 0.8);
+}
