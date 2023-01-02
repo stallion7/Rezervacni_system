@@ -18,6 +18,7 @@ class Registrace(models.Model):
     def __str__(self):
         return f"{self.prijmeni} {self.jmeno}"
 
+
 class Trenink(models.Model):
     popis = models.CharField(verbose_name="popis_tréninku", max_length=300)
 

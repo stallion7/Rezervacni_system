@@ -2,12 +2,18 @@
 
 {% block content %}
 <h1 class="text-center my-3 display-4">Rezervace</h1>
-<div id="cal" class="container col-sm-12 px-3 mx-auto">
+
+<div class="row">
+     <div class="col-xl-1"></div>
+<div id="cal" class=" col-xl-2">
  Čas: <b>  {{time}} </b></br>
-<p>Datum: <b>{{current_day}}. {{current_month}}. {{current_year}}</b></p></br>
+    <p>Datum: <b>{{current_day}}. {{current_month}}. {{current_year}}</b></p></br>
+    <div id="table" class="table table-sm table-hover table-light table-bordered table-responsive mx-1 px-2 py-2">
 {{ cal|safe }}
+        </div>
  </div>
-<div class="container col-md-2 mx-auto">
+    <div class=""></div>
+<div class=" col-xl-5 mx-auto">
     <div class="my-2">
       <a class="btn-sm " id="btn_rz" href="/slipka_gym/trenink/">+ Vytvoření rezervace</a>
         </div>
@@ -24,7 +30,7 @@
   <li> <b>Čas:</b> {{trenink.cas}}</li>
   <li> <b>Místo:</b> {{trenink.misto}}</li>
  </ul>
-       <div class="ml-2">
+       <div class="ml-3">
              <a class="btn-sm" id="btn_tr" href="{% url 'update-trenink' trenink.id %}">Update</a>
             <a class="btn-sm" id="btn_dl" href="{% url 'delete-trenink' trenink.id %}">Delete</a>
          </div>
@@ -33,4 +39,7 @@
  {% endfor %}
 
 </div>
+    <div class="col-xl-3"></div>
+    </div>
+
 {% endblock content %}
