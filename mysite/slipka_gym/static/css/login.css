@@ -32,6 +32,7 @@
   object-fit: scale-down;
   z-index: -1;
     width: 480px;
+     isolation: isolate;
 }
 
 #slipka2{
@@ -42,6 +43,7 @@
   object-fit: scale-down;
   z-index: -1;
     width: 480px;
+    isolation: isolate;
 }
 #username{
     top: 10px;

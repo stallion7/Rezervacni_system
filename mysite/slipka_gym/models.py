@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 class Registrace(models.Model):
     jmeno = models.CharField(verbose_name="Jméno", max_length=30)
@@ -33,6 +34,8 @@ class Trenink(models.Model):
     )
 
     misto = models.CharField(choices=MISTA, verbose_name="misto_konani_treninku", max_length=20)
+
+    prihlaseni_k_treninku = models.ManyToManyField(User)
 
     class Meta:
         ordering = ['datum', 'cas']

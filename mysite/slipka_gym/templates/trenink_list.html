@@ -13,8 +13,10 @@
      <td>
          <div class="ml-2">
               <a class="btn-sm" id="btn_dt" href="{% url 'show-trenink' trenink.id %}">Detail</a>
+              {% if user.is_authenticated %}
              <a class="btn-sm" id="btn_tr" href="{% url 'update-trenink' trenink.id %}">Update</a>
             <a class="btn-sm" id="btn_dl" href="{% url 'delete-trenink' trenink.id %}">Delete</a>
+             {% endif %}
          </div>
      </td>
   </tr>

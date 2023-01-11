@@ -9,6 +9,7 @@ from datetime import datetime
 from django.http import HttpResponseRedirect
 from .models import Trenink
 from .forms import TreninkForm
+from .forms import PrihlaseniForm
 
 def index(request):
     return render(request, "uvod.html")
@@ -58,6 +59,15 @@ def add_trenink(request):
             submitted = True
 
     return  render(request, "trenink.html", {'form': form, 'submitted': submitted})
+
+@login_required
+def prihlaseni_trenink(request, trenink_id):
+    trenink = Trenink.objects.get(pk=trenink_id)
+    form = PrihlaseniForm(request.POST or None, instance=trenink)
+    if form.is_valid():
+        form.save()
+        return redirect('rezervace')
+    return render(request, "prihlaseni_trenink.html", {'trenink': trenink, 'form': form})
 
 @login_required
 def update_trenink(request, trenink_id):

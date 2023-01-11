@@ -12,19 +12,19 @@
 {{ cal|safe }}
         </div>
  </div>
-    <div class=""></div>
 <div class=" col-xl-5 mx-auto">
     <div class="my-2">
       <a class="btn-sm " id="btn_rz" href="/slipka_gym/trenink/">+ Vytvoření rezervace</a>
         </div>
  {% for trenink in trenink_list %}
-
     <div class="card">
   <div class="card-header">
     <b>{{trenink}}</b>
   </div>
   <div class="card-body">
     <h4 class="card-title">{{trenink.popis}}</h4>
+        <div class="row">
+            <div class="col-md-8">
     <ul>
   <li> <b>Datum:</b> {{trenink.datum}}</li>
   <li> <b>Čas:</b> {{trenink.cas}}</li>
@@ -33,7 +33,19 @@
        <div class="ml-3">
              <a class="btn-sm" id="btn_tr" href="{% url 'update-trenink' trenink.id %}">Update</a>
             <a class="btn-sm" id="btn_dl" href="{% url 'delete-trenink' trenink.id %}">Delete</a>
+           <a class="btn-sm" id="btn_pr" href="{% url 'prihlaseni-trenink' trenink.id %}">Přihlášení k tréninku</a>
          </div>
+                </div>
+             <div class="col-md-4">
+                  <li> <b>Přihlášení:</b></li>
+                 <div class="mx-4">
+      {% for cvicenec in trenink.prihlaseni_k_treninku.all %}
+      <span >{{cvicenec.username}}</span>
+                     </br>
+      {% endfor %}
+                     </div>
+                 </div>
+              </div>
   </div>
 </div>
  {% endfor %}
