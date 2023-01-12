@@ -25,6 +25,7 @@ class PrihlaseniForm(ModelForm):
         model = Trenink
         fields = ('prihlaseni_k_treninku'),
         labels = {
+            'prihlaseni_k_treninku' : 'Přihlášení k tréninku'
         }
         widgets = {
         }

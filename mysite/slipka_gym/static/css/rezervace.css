@@ -7,3 +7,8 @@
      border: rgba(0, 0, 0, 0.8);
     padding: 5px;
 }
+#btn_pr{
+   background-color: rgb(1, 141, 180);
+     color: white;
+     border: rgba(0, 0, 0, 0.8);
+}
