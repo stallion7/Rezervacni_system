@@ -46,4 +46,7 @@ Taky jsem chtěl udělát webovou stránku s rezervačním systém pro kruháč 
 # To do
 možnost propojení s facebookem 
 
+# prezentace v PowerPointu
+odkaz: https://docs.google.com/presentation/d/1ERaCZZScwK7hz7HvzADgMkglYhFhUiDk/edit?usp=share_link&ouid=117965986394039961208&rtpof=true&sd=true
+
 
